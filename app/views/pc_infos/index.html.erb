@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pc Infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Picture</th>
+      <th>Url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pc_infos.each do |pc_info| %>
+      <tr>
+        <td><%= pc_info.title %></td>
+        <td><%= pc_info.description %></td>
+        <td><%= image_tag(pc_info.picture_url, width: 600) if pc_info.picture.present? %></td>
+        <td><%= pc_info.url %></td>
+        <td><%= link_to 'Show', pc_info %></td>
+        <td><%= link_to 'Edit', edit_pc_info_path(pc_info) %></td>
+        <td><%= link_to 'Destroy', pc_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pc Info', new_pc_info_path %>

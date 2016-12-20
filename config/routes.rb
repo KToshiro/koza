@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :pc_infos
   root                'static_pages#home'
   get    'news'    => 'static_pages#news'
   get    'help'    => 'static_pages#help'

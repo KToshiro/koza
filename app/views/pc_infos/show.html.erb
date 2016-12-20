@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @pc_info.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @pc_info.description %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@pc_info.picture_url, width: 600) if @pc_info.picture.present? %>
+  <%= @pc_info.picture %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @pc_info.url %>
+</p>
+
+<%= link_to 'Edit', edit_pc_info_path(@pc_info) %> |
+<%= link_to 'Back', pc_infos_path %>
