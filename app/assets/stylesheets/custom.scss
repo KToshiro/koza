@@ -1,6 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+li {
+  list-style: none;
+}
+
 /* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
@@ -287,4 +291,85 @@ span.picture {
   input {
     border: 0;
   }
+}
+
+
+
+#sec2 .float_area {
+  *zoom: 1;
+}
+
+#sec2 .float_area::before {
+  content: " ";
+  display: table;
+}
+
+#sec2 .float_area::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+#sec2 .float_area div {
+  float: left;
+  width: 29%;
+  margin: 0 2%;
+  text-align: left;
+}
+
+#sec2 .float_area div h2 {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+}
+
+#sec2 .float_area div p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0 0 14px 0;
+}
+
+.box {
+  // max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+#sec4 p {
+  font-size: 15px;
+  line-height: 2;
+  margin: 0 0 15px 0 ;
+}
+
+#sec4 .port ul {
+  padding: 30px 0;
+  margin:0 0 0 0;
+  *zoom: 1;
+}
+
+#sec4 .port ul::before{
+  content: " ";
+  display: table;
+}
+
+#sec4 .port ul::after{
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+#sec4 .port li {
+  float: left;
+  width: 22%;
+  margin: 10px 30px 30px 0;
+  text-align: left;
+}
+
+#sec4 .port li img {
+  width: 100%
+}
+
+#sec4 .port li p {
+  font-size: 14px;
+  margin: 5px 0;
 }

@@ -1,4 +1,19 @@
 <% if logged_in? %>
+<div class="center jumbotron">
+
+    <h1>Skill Up KOZA</h1>
+
+    <h2>
+    This is the home page for the
+    <a href="#">Programing Skill Up KOZA</a>
+    .
+  </h2>
+
+  <p></p>
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+<p></p>
+
   <div class="row">
     <aside class="col-md-4">
       <section class="user_info">
@@ -32,7 +47,44 @@
   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
 <p></p>
-<%= link_to image_tag("rails.png", alt: "SkillUpKoza logo"),
-            'http://skillupkoza.org/' %>
 
+    <article>
+      <section id="sec4">
+        <div class="box port">
+          <h1>スキルアップ講座一覧</h1>
+          <p>　　　プログラミングは実に楽しいです♪　その楽しさは山登りやマラソンと似ております。
+          <br>　　途中の長くつらい苦しさを乗り越えた先にあるその達成感は、何事にも代えられない喜びと爽快感をあなたにもたらしてくれます。
+          <br>　　そして、その経験とコンピュータスキル能力は、あなたの人生をより高い極みへと導いてくれるでしょう。
+          きっとここに、あなたのスキルにピッタリな講座があります！</p>
+          <hr>
+          <ul>
+            <li><%= link_to image_tag("thumb_01.jpg", alt: "SkillUpKoza logo"), '#' %>
+                <p>Word</p></li>
+            <li><%= link_to image_tag("thumb_02.jpg", alt: "SkillUpKoza logo"), '#' %>
+                <p>Excel</p></li>
+            <li><%= link_to image_tag("thumb_03.jpg", alt: "SkillUpKoza logo"), '#' %>
+                <p>PowerPoint</p></li>
+            <li><%= link_to image_tag("thumb_04.jpg", alt: "SkillUpKoza logo"), '#' %>
+                <p>Access</p></li>
+            <li><%= link_to image_tag("thumb_05.jpg", alt: "SkillUpKoza logo"), '#' %>
+                <p>Excel/VBA</p></li>
+            <li><%= link_to image_tag("thumb_06.jpg", alt: "SkillUpKoza logo"), '#' %>
+               <p>Ruby</p></li>
+            <li><%= link_to image_tag("thumb_07.jpg", alt: "SkillUpKoza logo"), '#' %>
+                <p>PHP</p></li>
+            <li><%= link_to image_tag("thumb_01.jpg", alt: "SkillUpKoza logo"), '#' %>
+               <p>English</p></li>
+            <li><%= link_to image_tag("thumb_02.jpg", alt: "SkillUpKoza logo"), '#' %>
+               <p>PC for Bignners</p></li>
+            <li><%= link_to image_tag("thumb_03.jpg", alt: "SkillUpKoza logo"), '#' %>
+                <p>PC for Advanced</p></li>
+            <li><%= link_to image_tag("thumb_04.jpg", alt: "SkillUpKoza logo"), '#' %>
+                <p>Scratch</p></li>
+            <li><%= link_to image_tag("thumb_05.jpg", alt: "SkillUpKoza logo"), '#' %>
+               <p>Python</p></li>
+          </ul>
+        </div>
+      </section>
+    </article>
 <% end %>
+
